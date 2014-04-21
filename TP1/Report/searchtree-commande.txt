@@ -1,0 +1,27 @@
+commande(NbR, NbC)
+
+[NbR\NbR1, NbC\NbC1]
+
+isBetween(NbR1, 5000, 10000), isBetween(NbC1, 9000, 20000), NbR1 > NbC1
+
+[NbR\5000, NbR1\5000, NbC\NbC1]
+
+isBetween(5000, 5000, 10000), isBetween(NbC1, 9000, 20000), 5000 > NbC1
+
+[NbR\5000, NbR1\5000, NbC\9000, NbC1\9000]
+
+isBetween(5000, 5000, 10000), isBetween(9000, 9000, 20000), 5000 > 9000
+
+fail
+
+
+
+[NbR\9001, NbR1\9001, NbC\NbC1]
+
+isBetween(9001, 5000, 10000), isBetween(NbC1, 9000, 20000), 9001 > NbC1
+
+[NbR\9001, NbR1\9001, NbC\9000, NbC1\9000]
+
+isBetween(9001, 5000, 10000), isBetween(9000, 9000, 20000), 9001 > 9000
+
+true

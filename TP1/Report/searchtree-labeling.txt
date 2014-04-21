@@ -1,0 +1,16 @@
+commandeLabeling(NbR, NbC)
+
+[NbR\NbR1, NbC\NbC1]
+
+commandeIC(NbR1, NbC1), labeling([NbR1, NbC1])
+
+[NbR\NbR1, NbC\NbC1]
+delayed goal: -NbC1{9000..20000} + NbR1{9001..10000} #> 0
+
+commandeIC(NbR1{9001..10000}, NbC1{9000..20000}), labeling([NbR1{9001..10000}, NbC1{9000..20000}])
+
+[NbR\9001, NbR1\9001, NbC\9000, NbC1\9000]
+
+commandeIC(9001, 9000), labeling([9001, 9000])
+
+true
